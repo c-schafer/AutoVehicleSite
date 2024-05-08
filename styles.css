@@ -1,0 +1,115 @@
+body {
+  background-color: lightsteelblue;
+  padding: 1%;
+}
+
+img {
+  height: 200px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: "Gill Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Gill Sans", sans-serif;
+  margin-top: 40px;
+}
+
+h3 {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
+
+  position: relative;
+  align-self: center;
+}
+
+p {
+  font-family: "Verdana", sans-serif;
+  font-size: medium;
+  line-height: 25px;
+}
+
+a.button {
+  background-color: burlywood;
+  color: black;
+  border: 2px solid black;
+  padding: 7px;
+  border-radius: 5px;
+  font-family: "Lucida Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+
+a.external {
+  width: fit-content;
+  background-color: cadetblue;
+  color: black;
+  border: 3px solid white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: large;
+  font-family: "Lucida Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+
+a.external:hover {
+  background-color: cadetblue;
+  color: black;
+  border: 3px solid black;
+  transition: ease 0.3s;
+}
+
+a:hover {
+  background-color: antiquewhite;
+  transition: ease 0.3s;
+}
+
+ul {
+  text-decoration: none;
+  margin: 30px;
+}
+
+li {
+  display: grid;
+  margin: 20px;
+}
+
+th {
+  font-size: large;
+}
+
+td {
+  font-size: large;
+  border: 1px solid black;
+  margin-right: 3px;
+  padding: 8px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 10px;
+  justify-self: center;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.box:hover {
+  box-shadow: 3px 3px 4px black;
+}
