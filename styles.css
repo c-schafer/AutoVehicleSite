@@ -26,7 +26,8 @@ h3 {
   align-self: center;
 }
 
-p {
+p,
+legend {
   font-family: "Verdana", sans-serif;
   font-size: medium;
   line-height: 25px;
@@ -100,7 +101,8 @@ td {
 .box {
   width: 300px;
   height: 300px;
-  padding: 5px;
+  padding: 10px;
+  background-color: burlywood;
   color: black;
   text-decoration: none;
   border: 3px solid black;
@@ -113,3 +115,9 @@ td {
 .box:hover {
   box-shadow: 3px 3px 4px black;
 }
+
+/* legend {
+  font-family: "Verdana", sans-serif;
+  font-size: medium;
+  line-height: 25px;
+} */
