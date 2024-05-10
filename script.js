@@ -1,16 +1,24 @@
-const form = document.querySelector("form");
-const log = document.querySelector("#log");
+const form1 = document.getElementById("form1");
 
-form.addEventListener(
+form1.addEventListener(
   "submit",
   (e) => {
-    const data = new FormData(form);
+    const data = new FormData(form1);
     let output = "";
     for (const entry of data) {
-      output = `${output}${entry[0]}=${entry[1]}\r`;
+      output = entry[1];
     }
-    log.innerText = output;
+    console.log("selected", output);
     e.preventDefault();
+    document.getElementsByClassName("chart")[0].style.display = "block";
   },
   false
 );
+
+const form2 = document.getElementById("form2");
+
+form2.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  document.getElementsByClassName("chart")[1].style.display = "block";
+});
