@@ -170,3 +170,7 @@ input:checked {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+div.container {
+  display: inline-block;
+}
