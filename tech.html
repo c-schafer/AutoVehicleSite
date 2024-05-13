@@ -8,6 +8,14 @@
 
 <body>
     <h1>Five Levels of Autonomous Driving</h1>
+    <a class="button" style="position: absolute; top: 30px; right: 100px;" href="index.html">Home</a>
+    <ul id="level-labels">
+        <li class="level-label">Level 1</li>
+        <li class="level-label">Level 2</li>
+        <li class="level-label">Level 3</li>
+        <li class="level-label">Level 4</li>
+        <li class="level-label">Level 5</li>
+    </ul>
     <ul id="level-boxes">
         <li class="level-box">Some safety features, such as lane assist, are included in the vehicle. Adaptive cruise
             control may be included, as well as emergency braking.</li>
@@ -20,13 +28,31 @@
         <li class="level-box">With full automation, a human driver is entirely unnecessary. Theoretically, a Level 5
             vehicle can operate safely under any conditions, but no company has reached this stage yet.</li>
     </ul>
-    <ul id="level-labels">
-        <li class="level-label">Level 1</li>
-        <li class="level-label">Level 2</li>
-        <li class="level-label">Level 3</li>
-        <li class="level-label">Level 4</li>
-        <li class="level-label">Level 5</li>
-    </ul>
-    <h3 style="position: absolute;margin-top: 500px;margin-left: 100px;">Ethical Implications</h3>
-    <!-- <p>some texct</p> -->
+
+    <img id="car" src="car.png" alt="graphic of a car">
+    <hr>
+    <h3 style="position: relative; margin-top: 100px;">Ethical Implications</h3>
+    <p>There are quite a few ethical issues to consider related to autonomous vehicles. Importantly, how are the
+        safeties of different stakeholders weighed against one another? Some might argue that the safety of the
+        driver/passengers is paramount, while others might argue the safety of other drivers or pedestrians are just as
+        important. How are we to program this into an autonomous vehicle system?</p><br>
+    <p>Furthermore, what if an autonomous vehicle must "decide" whether to stay on course and hit one person or swerve
+        out of the way and hit another? Similarly to the trolley car problem, what if it has to decide between hitting
+        one person or many? We must consider these questions as we further the technology of autonomous vehicles, hoping
+        that the end product will eventually be safer for everybody.</p><br>
+    <p>There are other considerations less related to safety as well. Might autonomous vehicles become reliable, safe,
+        and ubiquitous enough that human drivers lose their driving jobs? This is a real possibility that could put many
+        people out of work. Is it ethical to do so?</p>
 </body>
+<script>
+    const car = document.getElementById("car");
+    const levelBoxes = document.getElementsByClassName("level-box");
+    for (let i = 0; i < levelBoxes.length; i++) {
+        levelBoxes[i].addEventListener("mouseover", () => {
+            const left = 130 + i * 246;
+            car.style.left = `${left}px`;
+        });
+    }
+</script>
+
+</html>
